@@ -1,46 +1,63 @@
-# output dir
-output
-instant_test_output
-inference_test_output
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
-
-*.jpg
-*.png
-*.txt
-*.json
-*.diff
-
-# compilation and distribution
-__pycache__
-_ext
-*.pyc
+# C extensions
 *.so
-detectron2.egg-info/
+
+# Distribution / packaging
+.Python
+env/
 build/
+develop-eggs/
 dist/
-wheels/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# pytorch/python/numpy formats
-*.pth
-*.pkl
-*.npy
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# ipython/jupyter notebooks
-*.ipynb
-**/.ipynb_checkpoints/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Editor temporaries
-*.swn
-*.swo
-*.swp
-*~
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
 
-# editor settings
-.idea
-.vscode
+# Translations
+*.mo
+*.pot
 
-# project dirs
-/detectron2/model_zoo/configs
-/datasets
-/projects/*/datasets
-/models
+# Django stuff:
+# *.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# PyCharm
+.idea/*
+
+
+.DS_Store
