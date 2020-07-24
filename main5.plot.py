@@ -755,7 +755,7 @@ for c in 0, 1, 2, 3:
 # and for all maps
 '''
 for m in maps:
-    pl.plot_reps_and_best_of_vars(reps, multi_best_variant, mtr=0,
+    pl.best_of_vars(reps, multi_best_variant, mtr=0,
                                   maps=[m],
                                   nagts=nagts,
                                   statpath=statpath,
@@ -769,7 +769,7 @@ for m in maps:
 
 '''
 for m in maps:
-    pl.plot_reps_and_best_of_vars(reps, multi_best_variant, mtr=1,
+    pl.best_of_vars(reps, multi_best_variant, mtr=1,
                                   maps=[m],
                                   nagts=nagts,
                                   statpath=statpath,
@@ -779,7 +779,7 @@ for m in maps:
                                   display_value=True,
                                   yoffset=5)
 for m in maps:
-    pl.plot_reps_and_best_of_vars(reps, multi_best_variant, mtr=2,
+    pl.best_of_vars(reps, multi_best_variant, mtr=2,
                                   maps=[m],
                                   nagts=nagts,
                                   statpath=statpath,
@@ -790,7 +790,7 @@ for m in maps:
                                   yoffset=15)
 
 for m in maps:
-    pl.plot_reps_and_best_of_vars_norm_max_idleness(reps, multi_best_variant, 
+    pl.best_of_vars_norm_max_idleness(reps, multi_best_variant, 
     mtr=3,
                                                     maps=[m],
                                                     nagts=nagts,
@@ -843,9 +843,9 @@ pl.plot_all(strts, mtr=2, display_value=False, nagts=nagts)
 # and for all maps
 '''
 for m in ["islands", "map_a", "grid"]:
-    pl.plot_reps_and_best_of_vars(reps, best_of, mtr=1, maps=[m])
+    pl.best_of_vars(reps, best_of, mtr=1, maps=[m])
 
-pl.plot_reps_and_best_of_vars(reps, best_of, mtr=1)
+pl.best_of_vars(reps, best_of, mtr=1)
 '''
 
 # Plots the I_av values of the representatives and the best variant for each
@@ -853,10 +853,10 @@ pl.plot_reps_and_best_of_vars(reps, best_of, mtr=1)
 # and for all maps
 '''
 for m in ["islands", "map_a", "grid"]:
-    pl.plot_reps_and_best_of_vars(reps=reps, best_of=best_of, mtr=0,
+    pl.best_of_vars(reps=reps, best_of=best_of, mtr=0,
                                      maps=[m], display_value=False)
 
-pl.plot_reps_and_best_of_vars(reps=reps, best_of=best_of, mtr=0,
+pl.best_of_vars(reps=reps, best_of=best_of, mtr=0,
                                  display_value=False)
 '''
 
